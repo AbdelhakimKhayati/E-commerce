@@ -3,4 +3,4 @@ npm-debug.log
 .git
 vendor
 .env
-storage/*.key
+storage/*.key */
