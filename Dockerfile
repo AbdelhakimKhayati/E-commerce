@@ -21,6 +21,9 @@ COPY . /var/www/html
 # إعداد مجلد العمل
 WORKDIR /var/www/html
 
+# عرض محتوى مجلد العمل للتحقق من نسخ الملفات
+RUN ls -la /var/www/html
+
 # تثبيت حزم PHP باستخدام Composer بدون حزم التطوير وتهيئة الـ autoloader
 RUN composer install --no-dev --optimize-autoloader
 
